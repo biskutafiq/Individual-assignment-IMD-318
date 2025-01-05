@@ -1,0 +1,82 @@
+<html>
+<head>
+        <title>Menu Page</title>
+        <link rel="stylesheet" href="menupage.css">
+
+        <style>
+            
+            #clock {
+                font-size: 15px;
+                font-weight: bold;
+                color: white; 
+                text-align: center;
+                margin-top: 15px;
+            }
+        </style>
+
+    </head>
+    <body>
+    
+        <div class="hero">
+            <nav>
+                <h2 class="logo">AIDIL AFIQ Web<span>site</span></h2>
+
+               
+
+                <ul>
+                    <li><a href="Individual-assignment-IMD-318/biodata.html">About Me</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    
+                </ul>
+
+
+
+            
+                <script>
+                    function updateClock() {
+                      var now = new Date();
+                      var hours = now.getHours();
+                      var minutes = now.getMinutes();
+                      var seconds = now.getSeconds();
+                      var ampm = hours >= 12 ? 'PM' : 'AM';
+                  
+                      hours = hours % 12;
+                      hours = hours ? hours : 12; // 
+                      minutes = minutes < 10 ? '0' + minutes : minutes;
+                      seconds = seconds < 10 ? '0' + seconds : seconds;
+                  
+                      
+                      document.getElementById('clock').innerText = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+                    }
+                  
+                    setInterval(updateClock, 1000);
+                    updateClock();
+                  </script>
+                  
+                  <div id="clock"></div>
+
+
+
+
+                <a href="#" class="btn">Subscribe</a>
+            </nav>
+
+            
+           
+            <div class="content">
+            <h4>Assalamualaikum, my name is</h4>
+            <h1>Mohamad Aidil Afiq bin Mohamad Akmal</h1>
+            <h3> This is my personal website.</h3>
+            
+        </div>
+
+        
+        <footer>
+            <p>&copy; 2025 Mohamad Aidil Afiq. All Rights Reserved.</p>
+        </footer> 
+
+    </body>    
+</html>
