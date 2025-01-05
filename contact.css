@@ -1,0 +1,59 @@
+body {
+    background: url('Individual-assignment-IMD-318/image/photo_6307458258327160265_y.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.contact-container {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.icon:hover {
+    background-color: white;
+    color: black;
+}
+
+.gmail {
+    border-color: #ea4335;
+}
+
+.instagram {
+    border-color: #e4405f;
+}
+
+.facebook {
+    border-color: #4267B2;
+}
+
+.youtube {
+    border-color: #FF0000;
+}

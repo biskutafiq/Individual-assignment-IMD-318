@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <h1>My Gallery</h1>
+        <p>Me, my family and friends</p>
+        <audio controls>
+            <source src="Individual-assignment-IMD-318/audio/Billie Eilish - WILDFLOWER (Official Lyric Video).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio><br>
+        <button class="btn" onclick="one()">1</button>
+        
+        <button class="btn" onclick="four()">3</button>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="Individual-assignment-IMD-318/image/baju melayu.jpg" alt="Image 1">
+            <img src="Individual-assignment-IMD-318/image/gambar 2.jpg" alt="Image 2">
+            <img src="Individual-assignment-IMD-318/image/gambar 3.jpg" alt="Image 3">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439148_y.jpg" alt="Image 4">
+        </div>
+        <div class="column">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439149_y.jpg" alt="Image 5">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439150_y.jpg" alt="Image 6">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439151_y.jpg" alt="Image 7">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439152_y.jpg" alt="Image 8">
+        </div>
+        <div class="column">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439153_y.jpg" alt="Image 9">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439154_y.jpg" alt="Image 10">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439155_y.jpg" alt="Image 11">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439156_y.jpg" alt="Image 12">
+        </div>
+        <div class="column">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439157_y.jpg" alt="Image 12">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439158_y.jpg" alt="Image 13">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439159_y.jpg" alt="Image 14">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439160_y.jpg" alt="Image 15">
+        </div>
+        <div class="column">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439161_y.jpg" alt="Image 16">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439162_y.jpg" alt="Image 17">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439163_y.jpg" alt="Image 18">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439164_y.jpg" alt="Image 19">
+        </div>
+        <div class="column">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439165_y.jpg" alt="Image 20">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439166_y.jpg" alt="Image 21">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439167_y.jpg" alt="Image 22">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439168_y.jpg" alt="Image 23">
+        </div>
+        <div class="column">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439169_y.jpg" alt="Image 24">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439170_y.jpg" alt="Image 25">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439171_y.jpg" alt="Image 26">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439172_y.jpg" alt="Image 27">
+        </div>
+        <div class="column">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439173_y.jpg" alt="Image 28">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439174_y.jpg" alt="Image 29">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439175_y.jpg" alt="Image 30">
+            <img src="Individual-assignment-IMD-318/image/photo_6316677744930439178_y.jpg" alt="Image 31">
+        </div>
+    </div>
+
+    <script>
+        var elements = document.getElementsByClassName("column");
+
+        function one() {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.flex = "100%";
+            }
+        }
+
+        function two() {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.flex = "50%";
+            }
+        }
+
+        function four() {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.flex = "25%";
+            }
+        }
+
+        var header = document.getElementById("myHeader");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+</html>
